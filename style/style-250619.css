@@ -1,0 +1,403 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+header div.logo {
+  display: flex;
+  align-items: center;
+  flex: 5 1 400px;
+  margin-left: 2em;
+}
+header div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+header nav {
+  flex: 2 1 400px;
+}
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: #09777d;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+
+main {
+  /*首頁*/
+  /*About*/
+  /*Login*/
+  /*Contact*/
+}
+main section.backImage {
+  min-height: 90vh;
+  width: 100%;
+  background-image: url(../Pictures/pexels-photo-416676.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+main section.backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 90vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+main section.backImage div.filter h3 {
+  font-size: 3.5rem;
+  color: white;
+  margin: 2rem 0rem;
+}
+main section.backImage div.filter button.start {
+  background-color: #3bf0e5;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main section.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main section.second h2 {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+main section.second section.cards {
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+main section.second section.cards div.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 1 1 300px;
+}
+main section.second section.cards div.card div.img-container {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main section.second section.cards div.card div.img-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+main section.second section.cards div.card div.img-container img:hover {
+  transform: scale(1.2);
+}
+main section.second section.cards div.card h4 {
+  font-size: 2rem;
+  margin: 1rem 0rem;
+}
+main section.second section.cards div.card p {
+  font-size: 1.25rem;
+}
+main section.second section.cards div.card a {
+  margin: 1rem 0rem;
+  text-decoration: none;
+  background-color: #09777d;
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+}
+main .backImage2 {
+  background-image: url(../Pictures/gahag-0118838127.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+main .backImage2 .filter2 {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 40vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+main .backImage2 .filter2 h3 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 4em;
+}
+main .aboutContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .aboutContent p {
+  width: 70%;
+  margin: 35px 0;
+  line-height: 2em;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main .aboutContent .slogans {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+main .aboutContent .slogans .slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  flex: 1 1 300px;
+}
+main .aboutContent .slogans .slogan .picContainer {
+  width: 25vw;
+  height: 25vw;
+  border: 4px solid #2ca9af;
+  box-shadow: 1px 1px 12px #000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .aboutContent .slogans .slogan .picContainer img {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+}
+main .aboutContent .slogans .slogan h3 {
+  margin: 15px 0;
+  font-weight: bold;
+}
+main .backImage3 {
+  background-image: url(../Pictures/login-puc.jpg);
+}
+main .formContainer form {
+  width: 100%;
+}
+main .formContainer form table {
+  font-size: 1.2em;
+  border: 2px solid #2ca9af;
+  border-radius: 5%;
+  padding: 15px;
+  margin: 5em auto;
+}
+main .formContainer form table tr td:first-child {
+  text-wrap: nowrap;
+}
+main .formContainer form table tr td input {
+  height: 3vh;
+}
+main .formContainer form table tr td input.button {
+  background-color: #2ca9af;
+  color: #000;
+  width: 40px;
+  border-radius: 15%;
+  box-shadow: 1px 1px 2px #a09a9a;
+}
+main .formContainer form table tr td input.button:hover {
+  background-color: #09777d;
+  color: #fff;
+}
+main .formContainer form table tr td a {
+  font-size: 16px;
+}
+main .backImage4 {
+  background-image: url(../Pictures/contact-pic.jpg);
+}
+main .contactContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+main .contactContent .contentTop {
+  margin: 35px 0px;
+}
+main .contactContent .contentTop form table {
+  width: 80%;
+  font-size: 1em;
+  text-align: left;
+}
+main .contactContent .contentTop form table th {
+  padding: 5px;
+  width: 10em;
+  text-wrap: nowrap;
+}
+main .contactContent .contentTop form table td {
+  padding: 5px;
+}
+main .contactContent .contentTop form table td input, main .contactContent .contentTop form table td select, main .contactContent .contentTop form table td textarea {
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid #2ca9af;
+}
+main .contactContent .contentTop form table td input:focus, main .contactContent .contentTop form table td select:focus, main .contactContent .contentTop form table td textarea:focus {
+  background-color: rgb(241, 241, 241);
+  border: 1px solid #3bf0e5;
+  outline: none;
+}
+main .contactContent .contentTop form table td select, main .contactContent .contentTop form table td textarea {
+  font-size: 1em;
+  border: 1px solid #2ca9af;
+}
+main .contactContent .contentTop form p {
+  text-align: center;
+  margin-top: 5px;
+}
+main .contactContent .contentTop form p input {
+  margin: 0 8px;
+  padding: 5px;
+  background-color: #2ca9af;
+  color: #000;
+  width: 40px;
+  border-radius: 15%;
+  box-shadow: 1px 1px 2px #a09a9a;
+}
+main .contactContent .contentTop form p input:hover {
+  background-color: #09777d;
+  color: #fff;
+}
+main .contentDown {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+main .contentDown iframe {
+  width: 45vw;
+  height: 35vh;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 37vh;
+  justify-content: space-around;
+  background-color: rgb(207, 207, 207);
+}
+footer div.logo {
+  display: flex;
+  align-items: center;
+}
+footer div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+footer nav {
+  width: 30%;
+}
+footer nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer nav ul li {
+  flex-basis: 100px;
+}
+footer nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.35rem;
+}
+footer section.links a {
+  margin: 0rem 1rem;
+}
+footer section.links a img {
+  width: 5vw;
+  height: 5vw;
+}
+
+/*客製化捲軸
+網頁搜尋 scrollbar css 選W3School*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #09777d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2ca9af;
+}
+
+@media screen and (max-width: 700px) {
+  main section.second section.cards div.card img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  header div.logo {
+    margin-left: 0.5rem;
+  }
+  header div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer div.logo img {
+    width: 15vw;
+    height: 15vw;
+  }
+  footer section.links {
+    margin-top: 1rem;
+  }
+  footer section.links a img {
+    width: 10vw;
+    height: 10vw;
+  }
+}/*# sourceMappingURL=style-250619.css.map */
